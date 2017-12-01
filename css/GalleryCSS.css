@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+/*    overflow: hidden;*/
+   
+}
+.wrapper{
+    width: 80%;
+    height: 1955px;
+    margin: auto;
+    background:#cccccc;
+    border: 0.5px solid#000;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.col-1{ width: 8.33%}
+.col-2{ width:  16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+
+[class*='col-']{
+    float: left;
+    border:1px solid#fff;    
+}
+.col-12.banner{
+    height: 450px;
+    background: url(../img/c1.jpg) center center/cover;
+    animation: talhas;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+@keyframes talhas{
+    10%{background:url(../img/c1.jpg ) center center/cover;}
+    30%{background:url(../img/c2.jpg ) center center/cover;}
+    50%{background:url(../img/c3.jpg ) center center/cover;}
+    80%{background:url(../img/c4.jpg ) center center/cover;}
+    100%{background:url(../img/c-last.jpg ) center center/cover;}
+}
+.col-2.logo{
+    height: 185px;
+    margin: 265px 0px;
+    background: url(../img/pp.jpg) center center/cover;
+}
+.col-12.navbar{
+    height: 45px;
+    background: #cccccc;    
+}
+.col-12.navbar ul{
+    list-style: none;
+}
+.col-12.navbar ul li{
+    float: left;
+    position: relative;
+}
+.col-12.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-right:1px solid #444;
+    border-left: 1px solid#999;
+    background: #666666;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 13px 43.6px;
+    display: block;
+}
+.col-12.navbar ul li ul{
+    position: absolute;
+    display: none;
+}
+.col-12.navbar ul li ul li{
+    float: none;
+}
+.col-12.navbar ul li ul li a{
+    border-bottom: 0.5px solid#fff;
+    border-top: 0.5px solid#fff;
+    width: 130px;
+    padding: 2px;
+    font-size: 13.5px;
+}
+
+.col-12.navbar ul li:hover ul{
+    display: block;
+}
+
+.col-12.whole{
+/*    height: 2460px;*/
+    border: 1px solid#000;
+}
+ 
+.col-4.p1{
+    height: 180px;
+    margin: 73px 700px;
+    background: url(../img/fp-1.jpg) center center/cover;
+    border: 4px ridge#fff;
+    
+}
+.col-3.dp1{
+    height: 90px;
+    margin:-190px 426px;
+    text-align:left; 
+    border: none;
+    font-size: 17px;
+}
+.col-4.p2{
+    height: 200px;
+    margin: 73px 20px;
+    background: url(../img/p2.jpg) center center/cover;
+    border: 4px ridge#fff;
+    
+}
+.col-3.dp2{
+    height: 90px;
+    margin:-265px 392px;
+    text-align:left; 
+    border: none;
+    font-size: 17px;
+}
+.col-4.p3{
+    height: 250px;
+    margin: 73px 700px;
+    background: url(../img/p5.jpg) center center/cover;
+    border: 4px ridge#fff;
+}
+.col-3.dp3{
+    height: 90px;
+    margin:-280px 426px;
+    text-align:left; 
+    border: none;
+    font-size: 17px;
+}
+.col-4.p4{
+    height: 200px;
+    background: url(../img/p4-1.jpg) center center/cover;
+    border: 3px ridge#fff;
+    margin: 73px 20px;
+}
+.col-3.dp4{
+    height: 90px;
+    margin: 80px 0px;
+    border: none;
+    font-size: 18px;
+}
+
+.col-12.foot{
+    height: 45px;
+    border: 1px solid#000;
+    border-top: 1.5px solid#fff;
+    border-bottom: 1px solid#fff;
+    background: #000;
+}
+.col-1.fa{
+    border-radius: 50%;
+    height: 28px;
+    width: 25px;
+    margin: 7px 500px;
+/*    border: 1px solid#fff;*/
+    background: url(../img/insta-logo.png) center center/cover;
+    
+}
+/*.col-1.lin{
+    border-radius: 50%;
+    height: 28px;
+    width: 25px;
+    margin: 7px 300px;
+    border: 0.5px solid#fff;
+    
+}*/
+@media screen and (min-width:0px) and (max-width:450px){
+    body{
+        background-color:red;
+    }
+    [class*='col-']{
+        width: 100%;
+    }
+}
+@media screen and (min-width:451px) and (max-width:768px){
+    body{
+        background-color: #ffffff;
+    }
+    .col-m-1{ width: 8.33%}
+    .col-m-2{ width:  16.66%}
+    .col-m-3{ width: 25%}
+    .col-m-4{ width: 33.33%}
+    .col-m-5{ width: 41.66%}
+    .col-m-6{ width: 50%}
+    .col-m-7{ width: 58.33%}
+    .col-m-8{ width: 66.66%}
+    .col-m-9{ width: 75%}
+    .col-m-10{ width: 83.33%}
+    .col-m-11{ width: 91.66%}
+    .col-m-12{ width: 100%}
+}

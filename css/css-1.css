@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+.wrapper{
+    width: 80%;
+    min-height: 1200px;
+    margin: auto;
+    background: #ccc;
+    border: 1px solid#fff;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.col-1{ width: 8.33%}
+.col-2{ width:  16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+
+[class*='col-']{
+    float: left;
+    border:1px solid#fff;    
+}
+
+.col-12.banner{
+    height: 450px;
+    background: url(../img/c1.jpg) center center/cover;
+    animation: talhas;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes talhas{
+    10%{background:url(../img/c1.jpg) center center/cover;}
+    25%{background:url(../img/c2.jpg) center center/cover;}
+    55%{background:url(../img/c3.jpg) center center/cover;}
+    85%{background:url(../img/c4.jpg) center center/cover;}
+    100%{background:url(../img/c-last.jpg) center center/cover;}
+}
+.col-2.logo{
+    height: 185px;
+    margin: 264px 1.5px;
+    border: 2px ridge#fff;
+    background: url(../img/pp.jpg) center center/cover;
+    
+}
+.col-12.nav{
+    height: 45px;
+    border: 1px solid#fff;
+}
+.col-12.nav ul{
+    list-style: none;
+/*    margin: 0;
+    padding: 0;*/
+   
+}
+.col-12.nav ul li{
+    float: left;
+    position: relative;
+}
+.col-12.nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 13px 43.6px ;
+    display: block;
+    font-size: 15px;
+    background: #666666;
+    font-weight: 700;
+    border-right: 1px solid#444;
+    border-left: 1px solid#999;
+}
+.col-12.nav ul li ul{
+    position: absolute;
+    display: none;
+}
+.col-12.nav ul li ul li{
+    float: none;
+}
+.col-12.nav ul li ul li a{
+    text-transform: none;
+    border-bottom: 0.5px solid#cccccc;
+    padding: 5px auto;
+    font-size: 14.5px;
+    width: 125px;
+    border-top: 1px solid#fff;
+     
+}
+.col-12.nav ul li:hover ul{
+    display: block;
+}
+.col-10.l{
+    height: 670px;
+    
+}
+.col-2.r{
+    height: 670px;
+    text-align: center;
+}
+.col-4.b1{
+    height: 35px;
+    background: #000;
+}
+.col-4.b2{
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.col-4.b3{
+    height: 35px;
+    background: #000;
+}

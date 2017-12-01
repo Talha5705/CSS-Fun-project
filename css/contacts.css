@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+/*    overflow: hidden;*/
+   
+}
+.wrapper{
+    width: 80%;
+    height: 1500px;
+    margin: auto;
+    background:#cccccc;
+    border: 0.5px solid#000;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.col-1{ width: 8.33%}
+.col-2{ width:  16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+
+[class*='col-']{
+    float: left;
+    border:1px solid#fff;    
+}
+.col-12.cov{
+    height: 430px;
+    background: url(../img/c-last.jpg) center center/cover;
+    animation: zibon;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes zibon{
+    0%{background:url(../img/c-last.jpg)center center/cover;}
+    30%{background:url(../img/c1.jpg)center center/cover;}
+    50%{background:url(../img/c2.jpg)center center/cover;}
+    80%{background:url(../img/c3.jpg)center center/cover;}
+    100%{background:url(../img/c4.jpg)center center/cover;}
+}
+.col-2.pp{
+    height: 200px;
+    margin: 229px 0.5px;
+    background: url(../img/pp.jpg)center center/cover;
+    
+}
+.col-12.menu{
+    height: 45px;
+    background: #444;
+}
+.col-12.menu ul{
+    list-style: none;
+    
+   
+}
+.col-12.menu ul li{
+    float: left;
+    position: relative;
+}
+.col-12.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 10px 32px;
+    border-right: 1px#444;
+    border-left: 1px solid#999;
+    font-weight: 700;
+    font-size: 18px;
+}
+.col-12.menu ul li ul{
+    position: absolute;
+    display: none;
+}
+.col-12.menu ul li ul li{
+    float: none;
+}
+.col-12.menu ul li ul li a{
+    text-align: center;
+    text-transform: none;
+    font-size: 15px;
+    background: #444;
+    width: 145px;
+    border-top: 1px solid#ccc;
+}
+.col-12.menu ul li:hover ul{
+    display: block;
+}
+.col-7.map{
+    height:670px;
+    width: 602px;
+    margin: -108px 230px;
+    border-color: #000000;
+}
+.col-6.d1{
+    height:219px; 
+    margin: -4px 0px;
+    border-color: #000000;
+     
+}
+.col-6.d2{
+    height:219px;
+    margin: -4px 0px;
+    border-color: #000000;
+     
+}
+.col-3.h{
+    height: 50px;
+    margin: 100px 230px;
+    border: none;
+    
+}
